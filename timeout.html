@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeout</title>
+    <style>
+        #kotakJs {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            left: 10px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="kotakJs"></div>
+    <script>
+        const kotakJs = document.getElementById('kotakJs');
+        let posisix = 10;
+        const kecepatan = 5; // pixel per langkah
+
+        function animasikanKotak() {
+            posisix += kecepatan;
+            kotakJs.style.left = posisix + 'px';
+            if (posisix < 300) {
+                setTimeout(animasikanKotak, 50); // Ulangi setelah 50ms
+            }
+        }
+
+        animasikanKotak();
+        </script>
+</body>
+</html>
