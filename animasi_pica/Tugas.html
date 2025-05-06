@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Café Kopi Kita</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefae0;
+      color: #333;
+    }
+
+    header {
+      background-color: #6d4c41;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+
+    nav {
+      background-color: #8d6e63;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd54f;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeInUp 1s ease;
+    }
+
+    .gambar {
+      max-width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #6d4c41;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Café Kopi Kita</h1>
+    <p>Tempat Nongkrong Asik & Nikmatnya Secangkir Kopi</p>
+  </header>
+
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Tentang</a>
+    <a href="#">Menu</a>
+    <a href="#">Kontak</a>
+  </nav>
+
+  <section id="beranda">
+    <h2>Selamat Datang di Café Kopi Kita</h2>
+    <p>Nikmati suasana hangat dan kopi terbaik dari biji pilihan Indonesia.</p>
+    <img class="gambar" src="https://tse3.mm.bing.net/th?id=OIP.E1ukdBj7Zm0PHQl5NcLNYAHaE7&pid=Api.jpg" alt="Suasana Café">
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Café Kopi Kita berdiri sejak 2020 dan mengutamakan kualitas rasa, kenyamanan tempat, dan pelayanan ramah untuk semua pelanggan.</p>
+    <img class="gambar"src="https://tse4.mm.bing.net/th/id/OIP.tMb_LRvithU6CRlHaUWnBAAAAA?pid=Api.jpg" alt="Tentang Kami">
+  </section>
+
+  <section id="menu">
+    <h2>Menu Favorit</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>☕ Espresso</li>
+      <li>🍫 Caffè Mocha</li>
+      <li>🍵 Matcha Latte</li>
+      <li>🥐 Croissant & Pastry</li>
+    </ul>
+    <img class="gambar" src="https://tse1.mm.bing.net/th?id=OIP.VCOCbsthUN4QmCgkRrwBjAHaKd&cb=iwp1&pid=Api" alt="Menu Makanan Kafe">
+  </section>
+  <section id="kontak">
+    <h2>Hubungi Kami</h2>
+    <p>Email: cafe@kopikita.id</p>
+    <p>Instagram: @kopikita.cafe</p>
+    <p>Alamat: Jl. Kenangan No. 10, Bandung</p>
+    <img class="gambar" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Coffee_shop_interior.jpg" alt="Interior Café">
+  </section>
+  <footer>
+    &copy; 2025 Café Kopi Kita. Hak Cipta Dilindungi.
+  </footer>
+</body>
+</html>
